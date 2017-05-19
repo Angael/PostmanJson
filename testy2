@@ -1,0 +1,143 @@
+{
+	"variables": [],
+	"info": {
+		"name": "Testy strony api",
+		"_postman_id": "8cca29ed-9b3a-b29b-cb85-68f6dbb05328",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Get list users success",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							"tests[\"Response time is less than 40ms\"] = responseTime <4000;"
+						]
+					}
+				}
+			],
+			"request": {
+				"url": "https://reqres.in/api/users?page=2\n",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Put updata user",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							"tests[\"Response time is less than 40ms\"] = responseTime <4000;"
+						]
+					}
+				}
+			],
+			"request": {
+				"url": "https://reqres.in/api/users?{&\"name\"=\"Franek Kimono\",&\"job\"=\"Karateka\"&}",
+				"method": "POST",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Patch update user",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							"tests[\"Response time is less than 40ms\"] = responseTime <4000;"
+						]
+					}
+				}
+			],
+			"request": {
+				"url": "https://reqres.in/api/users/2?{&\"name\"=\"Franek Kimono\",&\"job\"=\"Karateka\"&}",
+				"method": "PATCH",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Put update user",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							"tests[\"Response time is less than 40ms\"] = responseTime <4000;"
+						]
+					}
+				}
+			],
+			"request": {
+				"url": "https://reqres.in/api/users/2?{&\"name\"=\"Franek Kimono\",&\"job\"=\"Karateka\"&}",
+				"method": "PUT",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Delete user",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							"tests[\"Response time is less than 40ms\"] = responseTime <4000;"
+						]
+					}
+				}
+			],
+			"request": {
+				"url": "https://reqres.in/api/users/2",
+				"method": "DELETE",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Get z innej stronki, jsonplaceholder.typicode.com",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							"tests[\"Response time is less than 40ms\"] = responseTime <4000;"
+						]
+					}
+				}
+			],
+			"request": {
+				"url": "https://jsonplaceholder.typicode.com/users",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		}
+	]
+}
